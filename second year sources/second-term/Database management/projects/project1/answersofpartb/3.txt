@@ -1,0 +1,13 @@
+select category_name,
+Cat.category_id,
+product_name,
+product_id,
+unit_price,
+units_in_stock,
+units_on_order,
+reorder_level,
+discontinued
+from "19290337_Project1".categories as Cat
+join "19290337_Project1".products as Pro on Cat.category_id = Pro.category_id
+where (discontinued = 0 ) and (reorder_level > 20) and (units_on_order=0)
+order by product_id

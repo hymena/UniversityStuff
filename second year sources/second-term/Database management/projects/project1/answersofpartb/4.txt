@@ -1,0 +1,18 @@
+select ship_name,
+ship_country,
+Cus.customer_id,
+Cus.company_name,
+concat(first_name,' ',last_name) as salesperson,
+S.phone phone,
+Pro.product_id,
+product_name,
+freight
+from "19290337_Project1".customers as Cus,"19290337_Project1".orders as O,"19290337_Project1".order_details as OD,"19290337_Project1".products as Pro,
+"19290337_Project1".employees as E,"19290337_Project1".shippers as S
+where(Cus.customer_id = O.customer_id)
+and (O.order_id = OD.order_id)
+and (OD.product_id = Pro.product_id)
+and (E.employee_id = O.employee_id)
+and (S.shipper_id = O.ship_via)
+and (ship_country like '%y' and Cus.customer_id like 'M%' and freight>70)
+order by ship_country desc, salesperson asc, freight asc, product_id asc 

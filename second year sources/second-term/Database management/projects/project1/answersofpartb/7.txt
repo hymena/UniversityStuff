@@ -1,0 +1,12 @@
+(select product_name as products_name,
+unit_price
+from "19290337_Project1".products
+order by unit_price desc
+limit 5)
+union all
+(select product_name as products_name,
+unit_price
+from "19290337_Project1".products
+order by unit_price asc
+limit 5)
+order by unit_price desc

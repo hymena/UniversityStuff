@@ -1,0 +1,366 @@
+Introduction
+
+01
+Our project was not about storing data for a company or an establishment, it was
+a game.
+The idea of the game is simple, each player owns a bunch of birds. The player can
+buy and sell them, train them, send them to performances and breed them.
+Each bird has 3 main ‘stats’, agility, speed and singing quality. The higher these
+are, the better of a quality the bird is. Birds with higher stats produce more
+ingame credits for their owners when they do a performance.
+If a player wants new birds without wanting to buy them, they can breed their
+existing birds, which will result in them laying eggs. Eggs hatch after a while and
+produce new birds.
+Birds can be equipped with accessories, which improves their performance if
+they’re either training or doing a show. Training birds mostly improves their stats,
+which sending them to a performance (show) gains their owner ingame credits.
+After an activity, birds tend to get hungry. Players can purchase food so that they
+can feed their birds. They should be careful though, some foods (especially cheap
+
+ones) are unhealthy and can affect the birds’ performance in the activities nega-
+tively.
+
+►We will keep track of all USERs, including their email [Email], account pass
+
+word [Password], username (unique) [Username], nickname (not unique) [Nick-
+name], ingame credits (money) [Credits], experience points [XP] and level
+
+[Level].
+►Each user will have a minimum of two BIRDs, which each have an ID [ID],
+name [Name], gender [Gender], date of birth[Date_Of_Birth], a ‘for-sale’ flag
+[For_Sale], a sale price [Price], which will only be significant if the pet is for sale,
+and a multivalued look attribute [Look] that will describe the look of the bird.
+Each pet is related to a player [OWNS].
+►Birds have some functional attributes. We keep track of their breed cooldown
+[Breed_Cooldown], which is the minimum time a bird isn’t allowed to breed with
+another. We also keep track of their activity cooldown [Activity_Cooldown],
+which is the minimum time a bird isn’t allowed to do an activity, either it being
+training or doing a performance. We also keep track of the hunger of each bird
+[Hunger]. A food tracker attribute [Food_Tracker] is there, which will track the
+‘healthiness’ of the food the bird eats. We store the values for agility [Agility],
+
+speed [Speed] and singing quality [Singing_Quality] of each bird, which affects
+how well does the bird perform in performances and trainings.
+►Birds can breed. Whenever they breed, the mother lays EGGs. We keep track
+of those eggs. We store their ID [ID], date of creation [Date_Of_Creation], their
+
+hatch time [Hatch_Time], and some visual properties such as its colors [Egg_Col-
+or1] and [Egg_Color2]. We also connect each egg to its parents with two rela-
+tionships [MOTHER_OF_EGG], [FATHER_OF_EGG]. We also keep track of the user
+
+owning the egg with the relationship [OWNS_EGG]
+►Each player owns several NESTs [OWNS_NEST]. We keep track of the nest’s ID
+[ID], name [Name], style [Nest_Style], main and secondary color [Main_Color],
+[Secondary_Color], price [Price]. We also store the quality of the nest. The time
+quality attribute [Time_Quality] will affect the time the eggs hatch in, and the
+stats quality [Stats_Quality] will affect the agility, speed and singing quality of the
+birds when they hatch from the eggs that were laying in the nest. A nest can be
+occupied by a maximum of one bird in a living relationship [LIVES]. Whenever a
+bird lays eggs, they lay them in the nest which they live in, which is a relation
+
+between eggs and nests [SITS].
+►Birds can do ACTIVITIES, which is an entity dependant on the existence of a
+bird. Each activity has a name [Activty_Name], a starting time [Start_Time], a
+duration [Duration], and a type (race, singing or stunts) [Activity_Type]. Activities
+divide into two types, performances [PERFORMANCE] or trainings [TRAINING].
+Each performance has rating [Rating], which defines how good the performance
+was. Each training has difficulty [Difficulty]. Trainings with more difficulty usually
+take more time and might hurt the bird, but might benefit it more. We track the
+activities of a bird with the relationship [DOES].
+►Users can buy ACCESSORIES for their birds [OWNS_ACCESSORY]. Accessories
+can improve a birds activity around speed, agility and singing. Each accessory
+has an ID [ID], a name [Name], a type [Type], and three quality attributes for
+
+each the agility [Agility_Quality], speed [Speed_Quality] and singing [Sing-
+ing_Quality], which describe how well this accessory can improve the bird using
+
+it in those 3 fields. We keep track of the accessories used by a bird with the
+relation [USES_ACCESSORY], which has attributes of the familiarity [Familiarity].
+
+►The more familiar a bird is with an accessory the better it affects it. Another
+attribute is a flag [Holds]. One bird can use multiple accessories, but not at
+once. At one time, the bird only uses one accessory. That flag keeps track of
+which accessory is currently being used by a bird and which aren’t.
+
+►Users can buy FOOD for their birds. Each food has a type [Type], a quantity
+[Quantity]. We also keep track of how healthy a food is [Healthiness] and how
+much hunger does it restore to the bird eating it [Restoration].
+
+Requirements
+
+02
+►We will keep track of all USERs, including their email [Email], account pass
+
+word [Password], username (unique) [Username], nickname (not unique) [Nick-
+name], ingame credits (money) [Credits], experience points [XP] and level
+
+[Level].
+►Each user will have a minimum of two BIRDs, which each have an ID [ID],
+name [Name], gender [Gender], date of birth[Date_Of_Birth], a ‘for-sale’ flag
+[For_Sale], a sale price [Price], which will only be significant if the pet is for sale,
+and a multivalued look attribute [Look] that will describe the look of the bird.
+Each pet is related to a player [OWNS].
+►Birds have some functional attributes. We keep track of their breed cooldown
+[Breed_Cooldown], which is the minimum time a bird isn’t allowed to breed with
+another. We also keep track of their activity cooldown [Activity_Cooldown],
+which is the minimum time a bird isn’t allowed to do an activity, either it being
+training or doing a performance. We also keep track of the hunger of each bird
+[Hunger]. A food tracker attribute [Food_Tracker] is there, which will track the
+‘healthiness’ of the food the bird eats. We store the values for agility [Agility],
+
+speed [Speed] and singing quality [Singing_Quality] of each bird, which affects
+how well does the bird perform in performances and trainings.
+►Birds can breed. Whenever they breed, the mother lays EGGs. We keep track
+of those eggs. We store their ID [ID], date of creation [Date_Of_Creation], their
+
+hatch time [Hatch_Time], and some visual properties such as its colors [Egg_Col-
+or1] and [Egg_Color2]. We also connect each egg to its parents with two rela-
+tionships [MOTHER_OF_EGG], [FATHER_OF_EGG]. We also keep track of the user
+
+owning the egg with the relationship [OWNS_EGG]
+►Each player owns several NESTs [OWNS_NEST]. We keep track of the nest’s ID
+[ID], name [Name], style [Nest_Style], main and secondary color [Main_Color],
+[Secondary_Color], price [Price]. We also store the quality of the nest. The time
+quality attribute [Time_Quality] will affect the time the eggs hatch in, and the
+stats quality [Stats_Quality] will affect the agility, speed and singing quality of the
+birds when they hatch from the eggs that were laying in the nest. A nest can be
+occupied by a maximum of one bird in a living relationship [LIVES]. Whenever a
+bird lays eggs, they lay them in the nest which they live in, which is a relation
+
+between eggs and nests [SITS].
+►Birds can do ACTIVITIES, which is an entity dependant on the existence of a
+bird. Each activity has a name [Activty_Name], a starting time [Start_Time], a
+duration [Duration], and a type (race, singing or stunts) [Activity_Type]. Activities
+divide into two types, performances [PERFORMANCE] or trainings [TRAINING].
+Each performance has rating [Rating], which defines how good the performance
+was. Each training has difficulty [Difficulty]. Trainings with more difficulty usually
+take more time and might hurt the bird, but might benefit it more. We track the
+activities of a bird with the relationship [DOES].
+►Users can buy ACCESSORIES for their birds [OWNS_ACCESSORY]. Accessories
+can improve a birds activity around speed, agility and singing. Each accessory
+has an ID [ID], a name [Name], a type [Type], and three quality attributes for
+
+each the agility [Agility_Quality], speed [Speed_Quality] and singing [Sing-
+ing_Quality], which describe how well this accessory can improve the bird using
+
+it in those 3 fields. We keep track of the accessories used by a bird with the
+relation [USES_ACCESSORY], which has attributes of the familiarity [Familiarity].
+
+►The more familiar a bird is with an accessory the better it affects it. Another
+attribute is a flag [Holds]. One bird can use multiple accessories, but not at
+once. At one time, the bird only uses one accessory. That flag keeps track of
+which accessory is currently being used by a bird and which aren’t.
+
+►Users can buy FOOD for their birds. Each food has a type [Type], a quantity
+[Quantity]. We also keep track of how healthy a food is [Healthiness] and how
+much hunger does it restore to the bird eating it [Restoration].
+
+Requirements
+
+03
+
+►We will keep track of all USERs, including their email [Email], account pass
+
+word [Password], username (unique) [Username], nickname (not unique) [Nick-
+name], ingame credits (money) [Credits], experience points [XP] and level
+
+[Level].
+►Each user will have a minimum of two BIRDs, which each have an ID [ID],
+name [Name], gender [Gender], date of birth[Date_Of_Birth], a ‘for-sale’ flag
+[For_Sale], a sale price [Price], which will only be significant if the pet is for sale,
+and a multivalued look attribute [Look] that will describe the look of the bird.
+Each pet is related to a player [OWNS].
+►Birds have some functional attributes. We keep track of their breed cooldown
+[Breed_Cooldown], which is the minimum time a bird isn’t allowed to breed with
+another. We also keep track of their activity cooldown [Activity_Cooldown],
+which is the minimum time a bird isn’t allowed to do an activity, either it being
+training or doing a performance. We also keep track of the hunger of each bird
+[Hunger]. A food tracker attribute [Food_Tracker] is there, which will track the
+‘healthiness’ of the food the bird eats. We store the values for agility [Agility],
+
+speed [Speed] and singing quality [Singing_Quality] of each bird, which affects
+how well does the bird perform in performances and trainings.
+►Birds can breed. Whenever they breed, the mother lays EGGs. We keep track
+of those eggs. We store their ID [ID], date of creation [Date_Of_Creation], their
+
+hatch time [Hatch_Time], and some visual properties such as its colors [Egg_Col-
+or1] and [Egg_Color2]. We also connect each egg to its parents with two rela-
+tionships [MOTHER_OF_EGG], [FATHER_OF_EGG]. We also keep track of the user
+
+owning the egg with the relationship [OWNS_EGG]
+►Each player owns several NESTs [OWNS_NEST]. We keep track of the nest’s ID
+[ID], name [Name], style [Nest_Style], main and secondary color [Main_Color],
+[Secondary_Color], price [Price]. We also store the quality of the nest. The time
+quality attribute [Time_Quality] will affect the time the eggs hatch in, and the
+stats quality [Stats_Quality] will affect the agility, speed and singing quality of the
+birds when they hatch from the eggs that were laying in the nest. A nest can be
+occupied by a maximum of one bird in a living relationship [LIVES]. Whenever a
+bird lays eggs, they lay them in the nest which they live in, which is a relation
+
+between eggs and nests [SITS].
+►Birds can do ACTIVITIES, which is an entity dependant on the existence of a
+bird. Each activity has a name [Activty_Name], a starting time [Start_Time], a
+duration [Duration], and a type (race, singing or stunts) [Activity_Type]. Activities
+divide into two types, performances [PERFORMANCE] or trainings [TRAINING].
+Each performance has rating [Rating], which defines how good the performance
+was. Each training has difficulty [Difficulty]. Trainings with more difficulty usually
+take more time and might hurt the bird, but might benefit it more. We track the
+activities of a bird with the relationship [DOES].
+►Users can buy ACCESSORIES for their birds [OWNS_ACCESSORY]. Accessories
+can improve a birds activity around speed, agility and singing. Each accessory
+has an ID [ID], a name [Name], a type [Type], and three quality attributes for
+
+each the agility [Agility_Quality], speed [Speed_Quality] and singing [Sing-
+ing_Quality], which describe how well this accessory can improve the bird using
+
+it in those 3 fields. We keep track of the accessories used by a bird with the
+relation [USES_ACCESSORY], which has attributes of the familiarity [Familiarity].
+
+►The more familiar a bird is with an accessory the better it affects it. Another
+attribute is a flag [Holds]. One bird can use multiple accessories, but not at
+once. At one time, the bird only uses one accessory. That flag keeps track of
+which accessory is currently being used by a bird and which aren’t.
+
+►Users can buy FOOD for their birds. Each food has a type [Type], a quantity
+[Quantity]. We also keep track of how healthy a food is [Healthiness] and how
+much hunger does it restore to the bird eating it [Restoration].
+
+►We will keep track of all USERs, including their email [Email], account pass
+
+word [Password], username (unique) [Username], nickname (not unique) [Nick-
+name], ingame credits (money) [Credits], experience points [XP] and level
+
+[Level].
+►Each user will have a minimum of two BIRDs, which each have an ID [ID],
+name [Name], gender [Gender], date of birth[Date_Of_Birth], a ‘for-sale’ flag
+[For_Sale], a sale price [Price], which will only be significant if the pet is for sale,
+and a multivalued look attribute [Look] that will describe the look of the bird.
+Each pet is related to a player [OWNS].
+►Birds have some functional attributes. We keep track of their breed cooldown
+[Breed_Cooldown], which is the minimum time a bird isn’t allowed to breed with
+another. We also keep track of their activity cooldown [Activity_Cooldown],
+which is the minimum time a bird isn’t allowed to do an activity, either it being
+training or doing a performance. We also keep track of the hunger of each bird
+[Hunger]. A food tracker attribute [Food_Tracker] is there, which will track the
+‘healthiness’ of the food the bird eats. We store the values for agility [Agility],
+
+Requirements
+
+04
+
+speed [Speed] and singing quality [Singing_Quality] of each bird, which affects
+how well does the bird perform in performances and trainings.
+►Birds can breed. Whenever they breed, the mother lays EGGs. We keep track
+of those eggs. We store their ID [ID], date of creation [Date_Of_Creation], their
+
+hatch time [Hatch_Time], and some visual properties such as its colors [Egg_Col-
+or1] and [Egg_Color2]. We also connect each egg to its parents with two rela-
+tionships [MOTHER_OF_EGG], [FATHER_OF_EGG]. We also keep track of the user
+
+owning the egg with the relationship [OWNS_EGG]
+►Each player owns several NESTs [OWNS_NEST]. We keep track of the nest’s ID
+[ID], name [Name], style [Nest_Style], main and secondary color [Main_Color],
+[Secondary_Color], price [Price]. We also store the quality of the nest. The time
+quality attribute [Time_Quality] will affect the time the eggs hatch in, and the
+stats quality [Stats_Quality] will affect the agility, speed and singing quality of the
+birds when they hatch from the eggs that were laying in the nest. A nest can be
+occupied by a maximum of one bird in a living relationship [LIVES]. Whenever a
+bird lays eggs, they lay them in the nest which they live in, which is a relation
+
+between eggs and nests [SITS].
+►Birds can do ACTIVITIES, which is an entity dependant on the existence of a
+bird. Each activity has a name [Activty_Name], a starting time [Start_Time], a
+duration [Duration], and a type (race, singing or stunts) [Activity_Type]. Activities
+divide into two types, performances [PERFORMANCE] or trainings [TRAINING].
+Each performance has rating [Rating], which defines how good the performance
+was. Each training has difficulty [Difficulty]. Trainings with more difficulty usually
+take more time and might hurt the bird, but might benefit it more. We track the
+activities of a bird with the relationship [DOES].
+►Users can buy ACCESSORIES for their birds [OWNS_ACCESSORY]. Accessories
+can improve a birds activity around speed, agility and singing. Each accessory
+has an ID [ID], a name [Name], a type [Type], and three quality attributes for
+
+each the agility [Agility_Quality], speed [Speed_Quality] and singing [Sing-
+ing_Quality], which describe how well this accessory can improve the bird using
+
+it in those 3 fields. We keep track of the accessories used by a bird with the
+relation [USES_ACCESSORY], which has attributes of the familiarity [Familiarity].
+
+►The more familiar a bird is with an accessory the better it affects it. Another
+attribute is a flag [Holds]. One bird can use multiple accessories, but not at
+once. At one time, the bird only uses one accessory. That flag keeps track of
+which accessory is currently being used by a bird and which aren’t.
+
+►Users can buy FOOD for their birds. Each food has a type [Type], a quantity
+[Quantity]. We also keep track of how healthy a food is [Healthiness] and how
+much hunger does it restore to the bird eating it [Restoration].
+
+Requirements
+
+05
+
+►We will keep track of all USERs, including their email [Email], account pass
+
+word [Password], username (unique) [Username], nickname (not unique) [Nick-
+name], ingame credits (money) [Credits], experience points [XP] and level
+
+[Level].
+►Each user will have a minimum of two BIRDs, which each have an ID [ID],
+name [Name], gender [Gender], date of birth[Date_Of_Birth], a ‘for-sale’ flag
+[For_Sale], a sale price [Price], which will only be significant if the pet is for sale,
+and a multivalued look attribute [Look] that will describe the look of the bird.
+Each pet is related to a player [OWNS].
+►Birds have some functional attributes. We keep track of their breed cooldown
+[Breed_Cooldown], which is the minimum time a bird isn’t allowed to breed with
+another. We also keep track of their activity cooldown [Activity_Cooldown],
+which is the minimum time a bird isn’t allowed to do an activity, either it being
+training or doing a performance. We also keep track of the hunger of each bird
+[Hunger]. A food tracker attribute [Food_Tracker] is there, which will track the
+‘healthiness’ of the food the bird eats. We store the values for agility [Agility],
+
+speed [Speed] and singing quality [Singing_Quality] of each bird, which affects
+how well does the bird perform in performances and trainings.
+►Birds can breed. Whenever they breed, the mother lays EGGs. We keep track
+of those eggs. We store their ID [ID], date of creation [Date_Of_Creation], their
+
+hatch time [Hatch_Time], and some visual properties such as its colors [Egg_Col-
+or1] and [Egg_Color2]. We also connect each egg to its parents with two rela-
+tionships [MOTHER_OF_EGG], [FATHER_OF_EGG]. We also keep track of the user
+
+owning the egg with the relationship [OWNS_EGG]
+►Each player owns several NESTs [OWNS_NEST]. We keep track of the nest’s ID
+[ID], name [Name], style [Nest_Style], main and secondary color [Main_Color],
+[Secondary_Color], price [Price]. We also store the quality of the nest. The time
+quality attribute [Time_Quality] will affect the time the eggs hatch in, and the
+stats quality [Stats_Quality] will affect the agility, speed and singing quality of the
+birds when they hatch from the eggs that were laying in the nest. A nest can be
+occupied by a maximum of one bird in a living relationship [LIVES]. Whenever a
+bird lays eggs, they lay them in the nest which they live in, which is a relation
+
+between eggs and nests [SITS].
+►Birds can do ACTIVITIES, which is an entity dependant on the existence of a
+bird. Each activity has a name [Activty_Name], a starting time [Start_Time], a
+duration [Duration], and a type (race, singing or stunts) [Activity_Type]. Activities
+divide into two types, performances [PERFORMANCE] or trainings [TRAINING].
+Each performance has rating [Rating], which defines how good the performance
+was. Each training has difficulty [Difficulty]. Trainings with more difficulty usually
+take more time and might hurt the bird, but might benefit it more. We track the
+activities of a bird with the relationship [DOES].
+►Users can buy ACCESSORIES for their birds [OWNS_ACCESSORY]. Accessories
+can improve a birds activity around speed, agility and singing. Each accessory
+has an ID [ID], a name [Name], a type [Type], and three quality attributes for
+
+each the agility [Agility_Quality], speed [Speed_Quality] and singing [Sing-
+ing_Quality], which describe how well this accessory can improve the bird using
+
+it in those 3 fields. We keep track of the accessories used by a bird with the
+relation [USES_ACCESSORY], which has attributes of the familiarity [Familiarity].
+
+►The more familiar a bird is with an accessory the better it affects it. Another
+attribute is a flag [Holds]. One bird can use multiple accessories, but not at
+once. At one time, the bird only uses one accessory. That flag keeps track of
+which accessory is currently being used by a bird and which aren’t.
+
+►Users can buy FOOD for their birds. Each food has a type [Type], a quantity
+[Quantity]. We also keep track of how healthy a food is [Healthiness] and how
+much hunger does it restore to the bird eating it [Restoration].

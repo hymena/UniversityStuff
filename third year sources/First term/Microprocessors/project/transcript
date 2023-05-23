@@ -1,0 +1,25 @@
+vsim work.fsm_19290337
+# vsim work.fsm_19290337 
+# Start time: 15:26:30 on Dec 24,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.fsm_19290337(sim)#1
+add wave -position insertpoint  \
+sim:/fsm_19290337/i_TrafficLights/WestYellow \
+sim:/fsm_19290337/i_TrafficLights/WestRed \
+sim:/fsm_19290337/i_TrafficLights/WestGreen \
+sim:/fsm_19290337/i_TrafficLights/State \
+sim:/fsm_19290337/i_TrafficLights/NorthYellow \
+sim:/fsm_19290337/i_TrafficLights/NorthRed \
+sim:/fsm_19290337/i_TrafficLights/NorthGreen \
+sim:/fsm_19290337/i_TrafficLights/Counter \
+sim:/fsm_19290337/i_TrafficLights/ClockFrequencyHz
+run 2 min
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+run 2 min
+# End time: 15:50:21 on Dec 24,2022, Elapsed time: 0:23:51
+# Errors: 0, Warnings: 1

@@ -1,0 +1,52 @@
+# Current time Sat Nov 26 16:21:37 2022
+# Program = vish
+# Id = "2021.2"
+# Version = "2021.04"
+# Date = "Apr 14 2021"
+# Platform = win64
+
+Exception c0000005 has occurred at address 6e8bdb3f. Traceback:
+# 0    0x6e8bdb3f: 'Tcl_GetString + 0x1f'
+# 1    0x6e89fd49: 'TclListObjSetElement + 0x459'
+# 2    0x6e89ec05: 'Tcl_ListObjReplace + 0x75'
+# 3    0x4015fcc8: '<unknown (@0x4015fcc8)>'
+# 4    0x4015edba: '<unknown (@0x4015edba)>'
+# 5    0x40157886: '<unknown (@0x40157886)>'
+# 6    0x6e7f7103: 'TclNRRunCallbacks + 0x63'
+# 7    0xa2010d9a: 'Itcl_EvalMemberCode + 0x3ba'
+# 8    0xa2011f5b: 'Itcl_ExecMethod + 0x23b'
+# 9    0xa2019a19: 'Itcl_EvalArgs + 0x1c9'
+# 10   0xa2014cf1: 'Itcl_HandleInstance + 0x2c1'
+# 11   0x6e7f7103: 'TclNRRunCallbacks + 0x63'
+# 12   0x6e7f8974: 'Tcl_EvalEx + 0xa34'
+# 13   0x6e7f7f68: 'Tcl_EvalEx + 0x28'
+# 14   0x6e63431a: 'Tk_BindEvent + 0x91a'
+# 15   0x6e66bd41: 'TkBindEventProc + 0x291'
+# 16   0x6e67c614: 'Tk_HandleEvent + 0x2f4'
+# 17   0x6e67b2da: 'TkDeleteThreadExitHandler + 0x31a'
+# 18   0x6e8aa56d: 'Tcl_ServiceEvent + 0xed'
+# 19   0x6e8aa9e4: 'Tcl_DoOneEvent + 0x184'
+# 20   0x401816ad: 'mti_RPC + 0x8bd'
+# 21   0x401a9b8d: 'Mtirpc_Init + 0x2170d'
+# 22   0x403ced80: 'Ucdb_Init + 0x344e0'
+# 23   0x403cd897: 'Ucdb_Init + 0x32ff7'
+# 24   0x4012023a: '<unknown (@0x4012023a)>'
+# 25   0x4012a34b: '<unknown (@0x4012a34b)>'
+# 26   0x6e7f7103: 'TclNRRunCallbacks + 0x63'
+# 27   0x4015fc52: '<unknown (@0x4015fc52)>'
+# 28   0x401577f5: '<unknown (@0x401577f5)>'
+# 29   0x6e7f7103: 'TclNRRunCallbacks + 0x63'
+# 30   0x6e8e2b84: 'TclServiceIdle + 0xa74'
+# 31   0x6e8e1f3d: 'Tcl_DeleteTimerHandler + 0x26d'
+# 32   0x6e8aa56d: 'Tcl_ServiceEvent + 0xed'
+# 33   0x6e8aa9e4: 'Tcl_DoOneEvent + 0x184'
+# 34   0x6e67aee5: 'Tk_MainLoop + 0x25'
+# 35   0x6e6bd282: 'Tk_MainEx + 0x932'
+# 36   0x401abae2: 'Mtirpc_Init + 0x23662'
+# 37   0x401ae6c4: 'Mtirpc_Init + 0x26244'
+# 38   0x40775810: 'Tclsqlite3_Init + 0x1c000'
+# 39   0xb1c8244d: 'BaseThreadInitThunk + 0x1d'
+# 40   0xb312dfb8: 'RtlUserThreadStart + 0x28'
+StackWalk failed 0
+# End of Stack Trace
+

@@ -1,0 +1,56 @@
+<!-- Example XML file -->
+<!-- Rule definitions -->
+<!--
+    Tags:
+    ofu tag => identifies the directories. 
+    ext tag => identifies the places that requires extract operation
+
+    Attributes:
+    path attribute => identifies the path of directory. Used in extract function as
+    a destination. ext tags since ext tags must have same absolute path as their
+    container or parents
+    mode attribute => identifies the mode should be applied during the copying files.
+    ext tags have mode attribute.
+    src attribute => identifies the source path (The path where files copied from). 
+    Only the ext tags have source attribute.
+-->
+
+<ofu path="Directory1">
+    <ofu path="Directory2">
+        <ext path="" src="file1" mode="mode1"></ext>
+        <ofu path="Directory4">
+            <ext path="" src="file19" mode="mode2"></ext>
+            <ofu path="Directory6">
+                <ext path="" src="file10" mode="mode8"></ext>
+                <ext path="" src="file8" mode="mode7"></ext>
+            </ofu>
+        </ofu>
+    </ofu>
+
+    <ofu path="Directory3">
+        <ext path="" src="file2" mode="mode4"></ext>
+        <ext path="" src="file13" mode="mode3"></ext>
+        <ext path="" src="file5" mode="mode5"></ext>
+        <ext path="" src="file4" mode="mode1"></ext>
+        <ext path="" src="file2" mode="mode1"></ext>
+        <ofu path="Directory5">
+            <ext path="" src="file9" mode="mode2"></ext>
+        </ofu>
+    </ofu>
+</ofu>
+
+
+
+
+
+
+
+
+<ofu path="Directory1">
+        <ofu path="Directory2"></ofu>
+        <ofu path="Directory3"></ofu>
+        <ofu path="Directory4">
+            <ofu path="Directory5"></ofu>
+            <ofu path="Directory6"></ofu>
+        </ofu>          
+</ofu>

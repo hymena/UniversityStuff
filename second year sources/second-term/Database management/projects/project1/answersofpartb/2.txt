@@ -1,0 +1,20 @@
+(select shipped_date shippeddate,
+OD.order_id orderid,
+sum((unit_price*quantity)) totalprice,
+extract (year from shipped_date)
+from "19290337_Project1".order_details as OD,"19290337_Project1".orders O
+where(OD.order_id = O.order_id)
+and (shipped_date between '1997-12-30' and '1998-1-5')
+group by OD.order_id,shipped_date
+order by shipped_date asc, OD.order_id asc)
+union all
+(select shipped_date shippeddate,
+OD.order_id orderid,
+sum((unit_price*quantity)) totalprice,
+extract (year from shipped_date)
+from "19290337_Project1".order_details as OD,"19290337_Project1".orders O
+where(OD.order_id = O.order_id)
+and (shipped_date is null)
+group by OD.order_id,shipped_date
+having sum((unit_price*quantity)) > 4000
+order by shipped_date asc, OD.order_id asc)

@@ -1,0 +1,169 @@
+<html>
+
+   <head>
+      <style>
+         body {
+            display: flex;
+            font-family: Courier New,serif;
+         }
+         #buttons-side{
+            min-width: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+         }
+         #explanations{
+            font-size: 22px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+         }
+         #right-side {
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; 
+         }
+         #buttons-side > button,div{
+            margin: 4px;
+         }
+
+         #inner-div{
+            display: flex;
+         }
+         button{
+            min-width: 250px !important;
+            background-color: aqua;border: none; border-radius: 4px; font-size: 18px; color: azure;
+         }
+        
+         button:hover{
+            opacity: 0.5;
+           
+         }
+      </style>
+
+   </head>
+   <body>
+      <div id="left-side">
+         <canvas id="glcanvas" width="800" height="800"></canvas>
+      </div>
+      
+      <div id="right-side">
+         <div >
+            <h1 style="text-align: center;">COM3037 Project</h1>
+            <h5 style="text-align: center;">by</h5>
+            <h3 style="text-align: center;">Ömer Faruk Uysal</h3>
+         </div>
+         <div id="inner-div">
+            <div id="buttons-side">
+               <button  id = "DirectionButton"> 
+                  Change Rotation Direction
+               </button>
+            
+               <button  id = "StopRotation"> 
+                  Start/Stop Rotation 
+               </button>
+               
+               <button  id = "MoveToRight"> 
+                  Move to right 
+               </button>
+            
+               <button  id = "MoveToLeft"> 
+                  Move to left 
+               </button>
+               
+               <button id = "MoveToDown"> 
+                  Move to down 
+               </button>
+               
+               <button id = "MoveToUp"> 
+                  Move to Up 
+               </button>
+               
+               <button id = "IncreaseSize"> 
+                  Increase size
+               </button>
+               
+               <button id = "DecreaseSize"> 
+                  Decrease size
+               </button>
+               <button id = "RandomColor"> 
+                  Random Color
+               </button>
+               <div>
+               speed 0 <input id="slide" style="accent-color: purple;" type="range"
+               min="0" max="1000" step="100" value="500" />
+               100 
+               </div>
+               <div>
+                  red 0 <input  style="accent-color:red;" id="red" type="range"
+                  min="0" max="1" step="0.1" value="0.5" />
+                  100 
+               </div>
+               <div>
+                  green 0 <input  style="accent-color:green;" id="green" type="range"
+                  min="0" max="1" step="0.1" value="0.5" />
+                  100 
+               </div>
+               <div>
+                  blue 0 <input  style="accent-color:blue;" id="blue" type="range"
+                  min="0" max="1" step="0.1" value="0.5" />
+                  100 
+               </div>
+               <div>
+                  opacity 0 <input style="accent-color:gray;" id="opacity" type="range"
+                  min="0" max="1" step="0.1" value="1" />
+                  100 
+               </div>
+               
+            </div>
+            <div id="explanations">
+               <p>
+                  You can both use buttons and keyboard to interact with letters. The key 'w' on keyboard moves the letters up, 's' moves the letters
+                  down, 'a' moves the letters left and 'd' moves the letters right. Also the key '+' on keyboard increases the size of letters and '-'
+                  decreases the size of letters. Also button names are given descriptive so you can easily understand and use them. 
+               </p>
+            </div>
+
+            
+
+         </div>
+         
+         
+      </div>
+      
+
+   </body>
+
+
+
+   <script id="vertex-shader" type="x-shader/x-vertex">
+      attribute vec4 vPosition;
+      uniform float theta;
+      uniform float translateX;
+      uniform float translateY;
+      uniform float scaleFactor;
+      void main(){ 
+               gl_Position.x = (cos(theta) * vPosition.x - sin(theta) * vPosition.y) * scaleFactor + translateX;
+               gl_Position.y = (sin(theta) * vPosition.x + cos(theta) * vPosition.y) * scaleFactor+ translateY;
+               gl_Position.z = 0.0;
+               gl_Position.w = 1.0;
+
+      }
+   </script>
+
+   <script id="fragment-shader" type="x-shader/x-fragment"> 
+      precision mediump float;
+      uniform vec4 color;
+      void main() {
+         gl_FragColor = color;
+      }
+   </script>
+   <script src="../common/MV.js"></script>
+   <script src="../common/initShaders.js"></script>
+   <script src="19290337.js"></script>
+   <script src="../common/webgl-utils.js"></script>
+
+</html>

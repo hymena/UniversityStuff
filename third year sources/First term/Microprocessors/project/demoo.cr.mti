@@ -1,0 +1,49 @@
+{D:/University Stuff/third year sources/First term/Microprocessors/project/FSM.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {D:/University Stuff/third year sources/First term/Microprocessors/project/FSM.vhd}
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity FSM
+-- Compiling architecture sim of FSM
+-- Loading entity TrafficLights
+
+} {} {}} {D:/University Stuff/third year sources/First term/Microprocessors/project/TrafficLights.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {D:/University Stuff/third year sources/First term/Microprocessors/project/TrafficLights.vhd}
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity TrafficLights
+-- Compiling architecture rtl of TrafficLights
+
+} {} {}} {D:/University Stuff/third year sources/First term/Microprocessors/project/FSM_19290337.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {D:/University Stuff/third year sources/First term/Microprocessors/project/FSM_19290337.vhd}
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity FSM_19290337
+-- Compiling architecture sim of FSM_19290337
+-- Loading entity TrafficLights_19290337
+
+} {} {}} {D:/University Stuff/third year sources/First term/Microprocessors/project/TrafficLights_19290337.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {D:/University Stuff/third year sources/First term/Microprocessors/project/TrafficLights_19290337.vhd}
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity TrafficLights_19290337
+-- Compiling architecture rtl of TrafficLights_19290337
+
+} {} {}} {D:/University Stuff/third year sources/First term/Microprocessors/project/T20_FiniteStateMachineTb.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {D:/University Stuff/third year sources/First term/Microprocessors/project/T20_FiniteStateMachineTb.vhd}
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity T20_FiniteStateMachineTb
+-- Compiling architecture sim of T20_FiniteStateMachineTb
+-- Loading entity T20_TrafficLights
+
+} {} {}}

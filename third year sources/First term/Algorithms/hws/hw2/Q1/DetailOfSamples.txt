@@ -1,0 +1,44 @@
+input1=> 
+4
+9 1 10
+6 2 5
+4 3 1
+7 3 2
+
+4 is the number of tasks(n).
+9 is the task id, 1 is the dealine, 10 is the profit. 
+
+There is 4 task and every task takes a single unite of time.
+
+So, the 9 must be the first task because its deadline is 1.
+Then the 6 will be chosen because its deadline is 2.
+Then, the 7 will be chosed because its profit is bigger than the 4's profit
+ 
+So your output is 9 6 7.
+
+input2=>
+8
+1 4 10
+8 7 3
+2 2 5
+3 4 1
+4 1 2
+5 3 12
+6 1 3
+7 5 12
+
+8 is the number of tasks(n).
+1 is the task id, 5 is the dealine, 10 is the profit. 
+
+There is 8 task and every task takes a single unite of time.
+
+So, the 6 will be chosen the first task because its deadline is 1 and its profit is bigger than the 4.
+Then the 2 will be chosen because its deadline is 2.
+Then, the 5 will be chosen because its deadline is 3.
+Then, the 1 will be chosen because of its profit is bigger than the 3.
+Then, the 7 will be chosen.
+Then, the 8 will be chosen.
+
+So your output 6 2 5 1 7 8
+ 
+

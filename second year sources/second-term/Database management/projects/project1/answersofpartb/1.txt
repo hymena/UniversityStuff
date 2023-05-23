@@ -1,0 +1,6 @@
+select order_id orderid,
+(unit_price*quantity) totalprice,
+(unit_price*quantity*(1-discount)) totalwithdiscountprice
+from "19290337_Project1".order_details
+order by totalwithdiscountprice desc, orderid asc
+limit 10 

@@ -1,0 +1,908 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/intelFPGA/21.1
+T_opt
+!s110 1671884257
+VcF]zX;j]TGTCOE[MEn=oX3
+04 3 3 work fsm sim 1
+=1-00d861087b7e-63a6ede0-383-4b04
+Z2 !s124 OEM10U2 
+Z3 o-quiet -auto_acc_if_foreign -work work
+Z4 tCvgOpt 0
+n@_opt
+Z5 OL;O;2021.2;73
+R1
+T_opt1
+!s110 1671878084
+VB?_kEZ_3_4RV>[YFBdYYf3
+Z6 04 24 3 work t20_finitestatemachinetb sim 1
+=2-00d861087b7e-63a6d5c3-23c-810
+R2
+R3
+R4
+n@_opt1
+R5
+R1
+T_opt2
+!s110 1671884558
+VTooW2L5EKjoMHL3;KCeHz2
+04 12 3 work fsm_19290337 sim 1
+=1-00d861087b7e-63a6ef0d-3a8-3684
+R2
+R3
+R4
+n@_opt2
+R5
+Edeneme
+Z7 w1669471467
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 65
+Z10 dD:/University Stuff/third year sources/First term/Microprocessors/project
+Z11 8D:/University Stuff/third year sources/First term/Microprocessors/project/deneme.vhd
+Z12 FD:/University Stuff/third year sources/First term/Microprocessors/project/deneme.vhd
+l0
+L5 1
+V9@YGOOig?<OdT6iG;NO9B3
+!s100 e>[c1XVi0Q4mT1?iH:=]71
+Z13 OL;C;2021.2;73
+32
+Z14 !s110 1669471469
+!i10b 1
+Z15 !s108 1669471469.000000
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/University Stuff/third year sources/First term/Microprocessors/project/deneme.vhd|
+Z17 !s107 D:/University Stuff/third year sources/First term/Microprocessors/project/deneme.vhd|
+!i113 0
+Z18 o-work work -2002 -explicit
+Z19 tExplicit 1 CvgOpt 0
+Asim
+R8
+R9
+DEx4 work 6 deneme 0 22 9@YGOOig?<OdT6iG;NO9B3
+!i122 65
+l13
+L8 34
+VRADhVAb9M9PN`V2FmZk2n0
+!s100 f<Cl:Hl<jGR5H;Nkz8Ii<3
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 0
+R18
+R19
+Tdesign1
+!s110 1671877826
+VSj@aRhm2>LNng98G4A>KL0
+R6
+R2
+o
+R4
+ndesign1
+R5
+R1
+Eforloopfile
+Z20 w1669460055
+!i122 7
+R10
+Z21 8D:/University Stuff/third year sources/First term/Microprocessors/project/forloopfile.vhd
+Z22 FD:/University Stuff/third year sources/First term/Microprocessors/project/forloopfile.vhd
+l0
+L1 1
+VI7>B]LhEn65K:KgQl9gb:1
+!s100 ?IQH]FHh00CTJ64E?0cIj1
+R13
+32
+Z23 !s110 1669460060
+!i10b 1
+Z24 !s108 1669460060.000000
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/University Stuff/third year sources/First term/Microprocessors/project/forloopfile.vhd|
+Z26 !s107 D:/University Stuff/third year sources/First term/Microprocessors/project/forloopfile.vhd|
+!i113 0
+R18
+R19
+Asim
+DEx4 work 11 forloopfile 0 22 I7>B]LhEn65K:KgQl9gb:1
+!i122 7
+l5
+Z27 L4 17
+VhjMF_3TKQWUgD?XinZlkg0
+!s100 RW_Uo<hzT3`=e<6JT<AT]3
+R13
+32
+R23
+!i10b 1
+R24
+R25
+R26
+!i113 0
+R18
+R19
+Efsm
+Z28 w1671884149
+Z29 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R8
+R9
+!i122 92
+R10
+Z30 8D:/University Stuff/third year sources/First term/Microprocessors/project/FSM.vhd
+Z31 FD:/University Stuff/third year sources/First term/Microprocessors/project/FSM.vhd
+l0
+L5 1
+VgQoj8]TTQZc:5=h3@QAYR2
+!s100 9Q8D1VZdbZ4GL]d;Ozd>d1
+R13
+32
+Z32 !s110 1671884225
+!i10b 1
+Z33 !s108 1671884225.000000
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/University Stuff/third year sources/First term/Microprocessors/project/FSM.vhd|
+Z35 !s107 D:/University Stuff/third year sources/First term/Microprocessors/project/FSM.vhd|
+!i113 0
+R18
+R19
+Asim
+Z36 DEx4 work 13 trafficlights 0 22 Vl4OWDFi_m0`k>9S_@g?D0
+R29
+R8
+R9
+DEx4 work 3 fsm 0 22 gQoj8]TTQZc:5=h3@QAYR2
+!i122 92
+l23
+Z37 L8 46
+VGF]nmB7l[OQEj`oIhN@9C2
+!s100 X`063g]M[Y2]60R6cHo@z2
+R13
+32
+R32
+!i10b 1
+R33
+R34
+R35
+!i113 0
+R18
+R19
+Efsm_19290337
+Z38 w1671884462
+R29
+R8
+R9
+!i122 95
+R10
+Z39 8D:/University Stuff/third year sources/First term/Microprocessors/project/FSM_19290337.vhd
+Z40 FD:/University Stuff/third year sources/First term/Microprocessors/project/FSM_19290337.vhd
+l0
+L5 1
+VEV2O8BLUBKe3fV@jRY6I^0
+!s100 8_mG[[dT9S_4kJRZI]lB11
+R13
+32
+Z41 !s110 1671884539
+!i10b 1
+Z42 !s108 1671884539.000000
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/University Stuff/third year sources/First term/Microprocessors/project/FSM_19290337.vhd|
+Z44 !s107 D:/University Stuff/third year sources/First term/Microprocessors/project/FSM_19290337.vhd|
+!i113 0
+R18
+R19
+Asim
+Z45 DEx4 work 22 trafficlights_19290337 0 22 DA9gb[UmP]gSXmHTn[zNS2
+R29
+R8
+R9
+DEx4 work 12 fsm_19290337 0 22 EV2O8BLUBKe3fV@jRY6I^0
+!i122 95
+l23
+R37
+VZ>J?2MZ:F5;LW4TfO[iLa1
+!s100 ^]1bfOo_AOhh61iE^n2OQ3
+R13
+32
+R41
+!i10b 1
+R42
+R43
+R44
+!i113 0
+R18
+R19
+Ehelloworld
+Z46 w1669454772
+!i122 1
+R10
+Z47 8D:/University Stuff/third year sources/First term/Microprocessors/project/helloworld.vhd
+Z48 FD:/University Stuff/third year sources/First term/Microprocessors/project/helloworld.vhd
+l0
+L1 1
+VaMhb6cmWmASHS8oVDV3;H1
+!s100 AJI5BI`Ez]3RWWjCkCXzM3
+R13
+32
+Z49 !s110 1669457880
+!i10b 1
+Z50 !s108 1669457879.000000
+Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/University Stuff/third year sources/First term/Microprocessors/project/helloworld.vhd|
+Z52 !s107 D:/University Stuff/third year sources/First term/Microprocessors/project/helloworld.vhd|
+!i113 0
+R18
+R19
+Asim
+DEx4 work 10 helloworld 0 22 aMhb6cmWmASHS8oVDV3;H1
+!i122 1
+l5
+Z53 L4 12
+VOJRT5WWY9]O12aMW[Sg:71
+!s100 OOjJ91;0Hl9D@K53mPLHe1
+R13
+32
+R49
+!i10b 1
+R50
+R51
+R52
+!i113 0
+R18
+R19
+Eifelsefile
+Z54 w1669463334
+!i122 16
+R10
+Z55 8D:/University Stuff/third year sources/First term/Microprocessors/project/ifelsefile.vhd
+Z56 FD:/University Stuff/third year sources/First term/Microprocessors/project/ifelsefile.vhd
+l0
+L1 1
+VJ>0lBHCfm2lXC8ezDT^jZ2
+!s100 1Ja[3m[AaW`ElkD3[PIiB2
+R13
+32
+Z57 !s110 1669463338
+!i10b 1
+Z58 !s108 1669463337.000000
+Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/University Stuff/third year sources/First term/Microprocessors/project/ifelsefile.vhd|
+Z60 !s107 D:/University Stuff/third year sources/First term/Microprocessors/project/ifelsefile.vhd|
+!i113 0
+R18
+R19
+Asim
+DEx4 work 10 ifelsefile 0 22 J>0lBHCfm2lXC8ezDT^jZ2
+!i122 16
+l15
+L10 33
+VihM_mME`I46T92LBeF5`f1
+!s100 Dm7>^KUz4Z7nKca9kU0io3
+R13
+32
+R57
+!i10b 1
+R58
+R59
+R60
+!i113 0
+R18
+R19
+Eloopfile
+Z61 w1669458955
+!i122 5
+R10
+Z62 8D:/University Stuff/third year sources/First term/Microprocessors/project/loopfile.vhd
+Z63 FD:/University Stuff/third year sources/First term/Microprocessors/project/loopfile.vhd
+l0
+L1 1
+Vj0[8i<@6IiQbAeK^dKb8I1
+!s100 5NgnI`Z^<_>bmGgQQV>Dl1
+R13
+32
+Z64 !s110 1669458974
+!i10b 1
+Z65 !s108 1669458973.000000
+Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/University Stuff/third year sources/First term/Microprocessors/project/loopfile.vhd|
+Z67 !s107 D:/University Stuff/third year sources/First term/Microprocessors/project/loopfile.vhd|
+!i113 0
+R18
+R19
+Asim
+DEx4 work 8 loopfile 0 22 j0[8i<@6IiQbAeK^dKb8I1
+!i122 5
+l5
+R27
+V2IQ4CCg3<_7>0;7L_TL^61
+!s100 R::UM^aAg[7NGYi1M5]9?1
+R13
+32
+R64
+!i10b 1
+R65
+R66
+R67
+!i113 0
+R18
+R19
+Esensivitylist
+Z68 w1669463911
+!i122 22
+R10
+Z69 8D:/University Stuff/third year sources/First term/Microprocessors/project/sensivitylist.vhd
+Z70 FD:/University Stuff/third year sources/First term/Microprocessors/project/sensivitylist.vhd
+l0
+L1 1
+V1AMfX5VA5h7fNU2K`888=0
+!s100 0nHP[[dNXN8^WRJ8_O_5Z0
+R13
+32
+Z71 !s110 1669463915
+!i10b 1
+Z72 !s108 1669463915.000000
+Z73 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/University Stuff/third year sources/First term/Microprocessors/project/sensivitylist.vhd|
+Z74 !s107 D:/University Stuff/third year sources/First term/Microprocessors/project/sensivitylist.vhd|
+!i113 0
+R18
+R19
+Asim
+DEx4 work 13 sensivitylist 0 22 1AMfX5VA5h7fNU2K`888=0
+!i122 22
+l15
+Z75 L10 34
+VBzE_UigAK9QBASio@2[MC3
+!s100 dzClH@=g??<Sbgc_?Qg^m1
+R13
+32
+R71
+!i10b 1
+R72
+R73
+R74
+!i113 0
+R18
+R19
+Esignalfile
+Z76 w1669461419
+!i122 12
+R10
+Z77 8D:/University Stuff/third year sources/First term/Microprocessors/project/signalfile.vhd
+Z78 FD:/University Stuff/third year sources/First term/Microprocessors/project/signalfile.vhd
+l0
+L1 1
+Vjdf9JAb8`LSTH05:WmKQ<1
+!s100 H]jA;eiRzKWjkA4HI7Uhj3
+R13
+32
+Z79 !s110 1669461421
+!i10b 1
+Z80 !s108 1669461420.000000
+Z81 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/University Stuff/third year sources/First term/Microprocessors/project/signalfile.vhd|
+Z82 !s107 D:/University Stuff/third year sources/First term/Microprocessors/project/signalfile.vhd|
+!i113 0
+R18
+R19
+Asim
+DEx4 work 10 signalfile 0 22 jdf9JAb8`LSTH05:WmKQ<1
+!i122 12
+l12
+L8 20
+VZT2l_JUgE8a:C<9m:aOON3
+!s100 O?ohz`e06UWSdbfGI99E@2
+R13
+32
+R79
+!i10b 1
+R80
+R81
+R82
+!i113 0
+R18
+R19
+Estd_logicfile
+Z83 w1669470238
+R8
+R9
+!i122 61
+R10
+Z84 8D:/University Stuff/third year sources/First term/Microprocessors/project/stdlogicfile.vhd
+Z85 FD:/University Stuff/third year sources/First term/Microprocessors/project/stdlogicfile.vhd
+l0
+L4 1
+V05=`J;NL>m_DE::eZZKAY3
+!s100 aR^M8aQToGVOOPRc]hLKE1
+R13
+32
+Z86 !s110 1669470275
+!i10b 1
+Z87 !s108 1669470275.000000
+Z88 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/University Stuff/third year sources/First term/Microprocessors/project/stdlogicfile.vhd|
+Z89 !s107 D:/University Stuff/third year sources/First term/Microprocessors/project/stdlogicfile.vhd|
+!i113 0
+R18
+R19
+Asim
+R8
+R9
+DEx4 work 13 std_logicfile 0 22 05=`J;NL>m_DE::eZZKAY3
+!i122 61
+l13
+L7 16
+V0fB=o0BeRckMPj5fYzb;_2
+!s100 ei^Hf<Bed?[[PWT_FZUj90
+R13
+32
+R86
+!i10b 1
+R87
+R88
+R89
+!i113 0
+R18
+R19
+Estdlogicvector
+Z90 w1669557961
+R8
+R9
+!i122 67
+R10
+Z91 8D:/University Stuff/third year sources/First term/Microprocessors/project/stdlogicvector.vhd
+Z92 FD:/University Stuff/third year sources/First term/Microprocessors/project/stdlogicvector.vhd
+l0
+L5 1
+VTCaLUM@IH2ImgQ:?44<I71
+!s100 ag6]XAG:b3?TVZ<_LC]hM2
+R13
+32
+Z93 !s110 1669557976
+!i10b 1
+Z94 !s108 1669557976.000000
+Z95 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/University Stuff/third year sources/First term/Microprocessors/project/stdlogicvector.vhd|
+Z96 !s107 D:/University Stuff/third year sources/First term/Microprocessors/project/stdlogicvector.vhd|
+!i113 0
+R18
+R19
+Asim
+R8
+R9
+DEx4 work 14 stdlogicvector 0 22 TCaLUM@IH2ImgQ:?44<I71
+!i122 67
+l12
+L8 15
+VBJY@KzJUm<hQS3T58@Oa;0
+!s100 hKEbJDZN3VIZF2KWC6NMn1
+R13
+32
+R93
+!i10b 1
+R94
+R95
+R96
+!i113 0
+R18
+R19
+Et01_helloworldto
+Z97 w1666990269
+!i122 0
+R10
+Z98 8D:/University Stuff/third year sources/First term/Microprocessors/project/T01_HelloWorldTo.vhd
+Z99 FD:/University Stuff/third year sources/First term/Microprocessors/project/T01_HelloWorldTo.vhd
+l0
+L1 1
+Vn3SzIbLOCz;jM7oWP57F:2
+!s100 Vz;h=0DAJmGiFWIbc`mze2
+R13
+32
+Z100 !s110 1666990330
+!i10b 1
+Z101 !s108 1666990330.000000
+Z102 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/University Stuff/third year sources/First term/Microprocessors/project/T01_HelloWorldTo.vhd|
+Z103 !s107 D:/University Stuff/third year sources/First term/Microprocessors/project/T01_HelloWorldTo.vhd|
+!i113 0
+R18
+R19
+Asim
+DEx4 work 16 t01_helloworldto 0 22 n3SzIbLOCz;jM7oWP57F:2
+!i122 0
+l5
+R53
+VHhW4XiGEi:Zz9iSzZPH1m1
+!s100 lFh;3E;K1CAZL3K0g;S:B1
+R13
+32
+R100
+!i10b 1
+R101
+R102
+R103
+!i113 0
+R18
+R19
+Et10_stdlogictb
+w1669460722
+!i122 47
+R10
+8D:/University Stuff/third year sources/First term/Microprocessors/VHDLwhiz_tutorials/exercises/T10_StdLogicTb.vhd
+FD:/University Stuff/third year sources/First term/Microprocessors/VHDLwhiz_tutorials/exercises/T10_StdLogicTb.vhd
+l0
+L3 1
+VhYc?E7Rm935ka0>0eecJ@2
+!s100 ;i4bWo3`li;Z@fTP<?OD`0
+R13
+32
+!s110 1669468715
+!i10b 1
+!s108 1669468715.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/University Stuff/third year sources/First term/Microprocessors/VHDLwhiz_tutorials/exercises/T10_StdLogicTb.vhd|
+!s107 D:/University Stuff/third year sources/First term/Microprocessors/VHDLwhiz_tutorials/exercises/T10_StdLogicTb.vhd|
+!i113 0
+R18
+R19
+Et20_finitestatemachinetb
+Z104 w1671878071
+R29
+R8
+R9
+!i122 90
+R10
+Z105 8D:/University Stuff/third year sources/First term/Microprocessors/project/T20_FiniteStateMachineTb.vhd
+Z106 FD:/University Stuff/third year sources/First term/Microprocessors/project/T20_FiniteStateMachineTb.vhd
+l0
+L5 1
+VQNW^Jg2bmc3`U:iYWjMB?1
+!s100 Y^]MPOjINBdn:W_J:3NYL0
+R13
+32
+Z107 !s110 1671878075
+!i10b 1
+Z108 !s108 1671878075.000000
+Z109 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/University Stuff/third year sources/First term/Microprocessors/project/T20_FiniteStateMachineTb.vhd|
+Z110 !s107 D:/University Stuff/third year sources/First term/Microprocessors/project/T20_FiniteStateMachineTb.vhd|
+!i113 0
+R18
+R19
+Asim
+Z111 DEx4 work 17 t20_trafficlights 0 22 Wa3nB]QZPKokGhZCDoD5S0
+R29
+R8
+R9
+DEx4 work 24 t20_finitestatemachinetb 0 22 QNW^Jg2bmc3`U:iYWjMB?1
+!i122 90
+l23
+R37
+Vk[MG3mL@JdmR1Z3Q;Z0`Y0
+!s100 fbj@[;8:mlfl<Rg@EQ:D>2
+R13
+32
+R107
+!i10b 1
+R108
+R109
+R110
+!i113 0
+R18
+R19
+Et20_trafficlights
+Z112 w1671872585
+R29
+R8
+R9
+!i122 84
+R10
+Z113 8D:/University Stuff/third year sources/First term/Microprocessors/project/T20_TrafficLights.vhd
+Z114 FD:/University Stuff/third year sources/First term/Microprocessors/project/T20_TrafficLights.vhd
+l0
+L5 1
+VWa3nB]QZPKokGhZCDoD5S0
+!s100 BWfaU58aDAU`7;foS=GI61
+R13
+32
+Z115 !s110 1671876912
+!i10b 1
+Z116 !s108 1671876912.000000
+Z117 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/University Stuff/third year sources/First term/Microprocessors/project/T20_TrafficLights.vhd|
+Z118 !s107 D:/University Stuff/third year sources/First term/Microprocessors/project/T20_TrafficLights.vhd|
+!i113 0
+R18
+R19
+Artl
+R29
+R8
+R9
+R111
+!i122 84
+l28
+Z119 L18 128
+V;>YzG:kJDTTz?eRmYC?R91
+!s100 34jf?lR6JQzLo5C]5MFE@0
+R13
+32
+R115
+!i10b 1
+R116
+R117
+R118
+!i113 0
+R18
+R19
+Etestbench
+Z120 w1671871960
+R29
+R8
+R9
+!i122 73
+R10
+Z121 8D:/University Stuff/third year sources/First term/Microprocessors/project/TestBench.vhd
+Z122 FD:/University Stuff/third year sources/First term/Microprocessors/project/TestBench.vhd
+l0
+L5 1
+VWe>94Z]DH5dZnTELZaWz63
+!s100 eDY@f[>UQUk`=@4KjYo120
+R13
+32
+Z123 !s110 1671872047
+!i10b 1
+Z124 !s108 1671872047.000000
+Z125 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/University Stuff/third year sources/First term/Microprocessors/project/TestBench.vhd|
+Z126 !s107 D:/University Stuff/third year sources/First term/Microprocessors/project/TestBench.vhd|
+!i113 0
+R18
+R19
+Asim
+R111
+R29
+R8
+R9
+DEx4 work 9 testbench 0 22 We>94Z]DH5dZnTELZaWz63
+!i122 73
+l23
+R37
+VDAkCK^zOTW4Om;^VcJ5cz0
+!s100 kIofHdWjT8DPCAiaoLWX=3
+R13
+32
+R123
+!i10b 1
+R124
+R125
+R126
+!i113 0
+R18
+R19
+Etrafficlights
+Z127 w1671884139
+R29
+R8
+R9
+!i122 91
+R10
+Z128 8D:/University Stuff/third year sources/First term/Microprocessors/project/TrafficLights.vhd
+Z129 FD:/University Stuff/third year sources/First term/Microprocessors/project/TrafficLights.vhd
+l0
+L5 1
+VVl4OWDFi_m0`k>9S_@g?D0
+!s100 alzDcG`D9dnDMGkD[8Y^a2
+R13
+32
+Z130 !s110 1671884220
+!i10b 1
+Z131 !s108 1671884220.000000
+Z132 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/University Stuff/third year sources/First term/Microprocessors/project/TrafficLights.vhd|
+Z133 !s107 D:/University Stuff/third year sources/First term/Microprocessors/project/TrafficLights.vhd|
+!i113 0
+R18
+R19
+Artl
+R29
+R8
+R9
+R36
+!i122 91
+l28
+R119
+VO2bznQkd8JD<]2HGXb=Z:0
+!s100 H:AKDzVUK2Wm>b_j4V7Ld2
+R13
+32
+R130
+!i10b 1
+R131
+R132
+R133
+!i113 0
+R18
+R19
+Etrafficlights_19290337
+Z134 w1671884475
+R29
+R8
+R9
+!i122 94
+R10
+Z135 8D:/University Stuff/third year sources/First term/Microprocessors/project/TrafficLights_19290337.vhd
+Z136 FD:/University Stuff/third year sources/First term/Microprocessors/project/TrafficLights_19290337.vhd
+l0
+L5 1
+VDA9gb[UmP]gSXmHTn[zNS2
+!s100 [J^Ng[B`;672FZLGaPXWz2
+R13
+32
+Z137 !s110 1671884535
+!i10b 1
+Z138 !s108 1671884534.000000
+Z139 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/University Stuff/third year sources/First term/Microprocessors/project/TrafficLights_19290337.vhd|
+Z140 !s107 D:/University Stuff/third year sources/First term/Microprocessors/project/TrafficLights_19290337.vhd|
+!i113 0
+R18
+R19
+Artl
+R29
+R8
+R9
+R45
+!i122 94
+l28
+R119
+V<j65KkzTLfbGeNV7W`hY<3
+!s100 e6SV1Xd=10L5bK<JdmzNd2
+R13
+32
+R137
+!i10b 1
+R138
+R139
+R140
+!i113 0
+R18
+R19
+Ewaitfor
+Z141 w1669458497
+!i122 3
+R10
+Z142 8D:/University Stuff/third year sources/First term/Microprocessors/project/waitfor.vhd
+Z143 FD:/University Stuff/third year sources/First term/Microprocessors/project/waitfor.vhd
+l0
+L1 1
+VB`VDY255CZkgAM]3[[:?Y0
+!s100 FF[X;]FN[janBQ9nN0XJc3
+R13
+32
+Z144 !s110 1669458540
+!i10b 1
+Z145 !s108 1669458540.000000
+Z146 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/University Stuff/third year sources/First term/Microprocessors/project/waitfor.vhd|
+Z147 !s107 D:/University Stuff/third year sources/First term/Microprocessors/project/waitfor.vhd|
+!i113 0
+R18
+R19
+Asim
+DEx4 work 7 waitfor 0 22 B`VDY255CZkgAM]3[[:?Y0
+!i122 3
+l5
+L4 13
+VUnYE3ha7gCf9K_d4U5<N62
+!s100 I9LOeS9[DV6eRT1e05^250
+R13
+32
+R144
+!i10b 1
+R145
+R146
+R147
+!i113 0
+R18
+R19
+Ewaitonandwaituntil
+Z148 w1669462894
+!i122 14
+R10
+Z149 8D:/University Stuff/third year sources/First term/Microprocessors/project/waitonandwaituntil.vhd
+Z150 FD:/University Stuff/third year sources/First term/Microprocessors/project/waitonandwaituntil.vhd
+l0
+L1 1
+ViQTo<Cn7fLG[FR:;F=00<1
+!s100 DE]Hh=mokjiUV2F@LmZCS2
+R13
+32
+Z151 !s110 1669462899
+!i10b 1
+Z152 !s108 1669462899.000000
+Z153 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/University Stuff/third year sources/First term/Microprocessors/project/waitonandwaituntil.vhd|
+Z154 !s107 D:/University Stuff/third year sources/First term/Microprocessors/project/waitonandwaituntil.vhd|
+!i113 0
+R18
+R19
+Asim
+DEx4 work 18 waitonandwaituntil 0 22 iQTo<Cn7fLG[FR:;F=00<1
+!i122 14
+l15
+R75
+V3o1546Q`eCVEi:H3L:LK;1
+!s100 FR1VnO^DD?]YDW]c_d>Ng1
+R13
+32
+R151
+!i10b 1
+R152
+R153
+R154
+!i113 0
+R18
+R19
+Ewhileloopfile
+Z155 w1669460419
+!i122 10
+R10
+Z156 8D:/University Stuff/third year sources/First term/Microprocessors/project/whileloopfile.vhd
+Z157 FD:/University Stuff/third year sources/First term/Microprocessors/project/whileloopfile.vhd
+l0
+L1 1
+Vj1Y<[>AVKZCmgZXmLkDG]2
+!s100 j;HS6W8:abP9^>1AU@U312
+R13
+32
+Z158 !s110 1669460422
+!i10b 1
+Z159 !s108 1669460422.000000
+Z160 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|D:/University Stuff/third year sources/First term/Microprocessors/project/whileloopfile.vhd|
+Z161 !s107 D:/University Stuff/third year sources/First term/Microprocessors/project/whileloopfile.vhd|
+!i113 0
+R18
+R19
+Asim
+DEx4 work 13 whileloopfile 0 22 j1Y<[>AVKZCmgZXmLkDG]2
+!i122 10
+l5
+L4 16
+VJSzKg[aYI6HON;Zm48icQ3
+!s100 jZ9I7J<XbVFhWYM^TGo4@2
+R13
+32
+R158
+!i10b 1
+R159
+R160
+R161
+!i113 0
+R18
+R19

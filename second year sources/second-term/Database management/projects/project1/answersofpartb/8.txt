@@ -1,0 +1,19 @@
+with x as (
+select extract (year from shipped_date) as shippedyear,
+category_name,
+sum(round((OD.unit_price*quantity*(1-discount))::numeric,2)) as categorysales
+from "19290337_Project1".orders as O,"19290337_Project1".order_details as OD,
+"19290337_Project1".products as P,"19290337_Project1".categories as C
+where (O.order_id = OD.order_id )
+and (P.product_id = OD.product_id)
+and (C.category_id = P.category_id)
+and (shipped_date > '1997-6-1')
+group by category_name,shippedyear
+)
+
+select shippedyear,
+category_name,
+sum(categorysales)
+from x 
+group by shippedyear,category_name
+order by shippedyear

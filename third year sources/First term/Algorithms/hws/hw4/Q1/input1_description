@@ -1,0 +1,14 @@
+A B C D E #airports name
+0 1 0 0 6 #flights between airports
+1 0 2 0 0
+0 2 0 3 3
+0 0 3 0 1
+6 0 3 1 0
+A E	  #find the sequance of flights from A to E	
+D A       #find the sequance of flights from D to A
+
+output for A E => A B C E
+output for D A => D C B A	
+
+PS 1: There can be various numbers of airports. In this example, it's 5(A B C D E).
+PS 2: It can be tested with a various number of inputs. This means it will not be tested with just 2 inputs(in this example, they are A E, D A.) 

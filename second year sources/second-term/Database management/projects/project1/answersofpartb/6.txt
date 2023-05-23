@@ -1,0 +1,16 @@
+(select table_name as tablename,
+city,
+company_name,
+contact_name
+from information_schema.tables,"19290337_Project1".customers
+where table_name = 'customers' and contact_name like '%w%'
+)
+union all
+(select table_name as tablename,
+city,
+company_name,
+contact_name
+from information_schema.tables,"19290337_Project1".suppliers
+where table_name = 'suppliers' and contact_name like '%g%'
+)
+order by contact_name
